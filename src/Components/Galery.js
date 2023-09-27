@@ -16,7 +16,11 @@ const person2 = {
 
 export function Profile({person}){
     return (
-        <div className="profile" style={{backgroundColor: "yellow"}}>
+        <div className="profile" style={{
+            backgroundColor: "yellow",
+            border: "1px solid black",
+            padding: "2%"
+        }}>
             <h2>This is {person.name}</h2>
             <Avatar person={person} size={100}/>
             <ul>
@@ -43,7 +47,7 @@ function Avatar({person, size}){
 
 function Galery() {
     return (
-        <div className="App">
+        <div className="App" style={{padding:"5vh"}}>
             <Profile person = {person1}/>
         </div>
     );
